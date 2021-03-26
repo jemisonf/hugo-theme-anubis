@@ -21,7 +21,8 @@
 
 /* Basic */
 html {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+    font-family: Charter, Bitstream Charter, serif;
     /* 1 */
     -ms-text-size-adjust: 100%;
     /* 2 */
@@ -31,7 +32,7 @@ html {
 
 body {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     color: var(--font-color);
@@ -55,7 +56,7 @@ summary {
 }	
 
 .container {
-    max-width: 42em;
+    max-width: 30em;
     margin: 0 auto;
 }
 
@@ -63,9 +64,13 @@ main {
     outline:none;
 }
 
+h1, h2, h3 {
+    font-family: Gill Sans, serif;
+}
+
 /* Headers */
 h1 {
-    font-size: 1.35em;
+    font-size: 1.5em;
 }
 
 h2 {
@@ -165,11 +170,17 @@ blockquote {
     border-left: 2px solid var(--bq-color);
     padding: 0.1em 1em;
     margin-left: 0.75em;
+    margin-right: 0;
+}
+
+blockquote p {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
 }
 
 p {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 hr {
@@ -219,7 +230,6 @@ header nav a {
 
 .common-header {
     padding-bottom: 1.5em;
-    border-bottom: thin solid var(--hr-color);
 }
 
 /* Pages */
@@ -284,9 +294,9 @@ article:not(:last-of-type) {
 }
 
 article header h1 {
-    font-size: 1.35em;
+    font-size: 1.5em;
     line-height: 1.1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     font-weight: 600;
 }
 
@@ -438,7 +448,6 @@ article figcaption {
 /* Footer */
 
 .common-footer {
-    border-top: thin solid var(--hr-color);
     padding-top: 1.5em;
     margin-top: 3em;
     font-size: 16px;
